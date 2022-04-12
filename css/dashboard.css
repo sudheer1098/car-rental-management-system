@@ -1,0 +1,114 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+.header {
+  overflow: hidden;
+  /*background-color: #9effbd;*/
+  padding: 20px 10px;
+  text-align: center;
+  /*background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);*/
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+
+
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-image: linear-gradient(45deg, #93a5cf 0%, #b8c5e0 100%);
+  color: rgb(14, 1, 1);
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: auto;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.add-form,
+.home_display {
+  /*background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);*/
+  /*background-color: #CDDCDC;
+ background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+ background-blend-mode: screen, overlay;*/
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  margin-bottom: 40px;
+  width: 100%;
+  /* max-width: 500px; */
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  text-align: center;
+  color: #a4243b;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+.table-image {
+  text-align: center;
+}

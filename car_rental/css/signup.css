@@ -1,0 +1,51 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+}
+
+
+.signup-form {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	/*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+	width: 100%;
+	max-width: 500px;
+	padding: 30px 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+
+	border-radius: 8px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+h1{
+	text-align: center;
+	color: #09203f;
+	margin-bottom: 20px;
+}
+
+
+h4 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: lighter;
+
+	margin-bottom: 20px;
+}
+
+h4 span {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #a4243b;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
